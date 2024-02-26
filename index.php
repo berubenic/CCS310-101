@@ -1,3 +1,4 @@
+<?php
 session_start();
 
 //This will get the ?lang=en or fr at the end of the url
@@ -34,3 +35,4 @@ foreach ($matches[1] as $key) {
 }
 
 echo $html;
+?>
