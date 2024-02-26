@@ -13,8 +13,18 @@ include('i18n/' . $lang . '.php');
 // Get the requested URL
 $url = $_SERVER['REQUEST_URI'];
 
-// Remove the leading slash from the URL
-$html_file = 'content' . $url;
+// If the URL is empty, assume it's index.html
+if ($url == '/') {
+    $html_file = 'content/index.html';
+} else {
+    // Remove the leading slash from the URL
+    $html_file = 'content' . $url;
+
+    // Add .html extension if not present
+    if (pathinfo($html_file, PATHINFO_EXTENSION) != 'html') {
+        $html_file .= '.html';
+    }
+}
 
 if (!file_exists($html_file)) {
     // If the HTML file doesn't exist, use the 404.html file
