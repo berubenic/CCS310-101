@@ -5,6 +5,6 @@ $lang = array(
     "selector.french" => "Français",
     "selector.english" => "English",
     "page-not-found" => "Sorry the page was not found!",
-    "title" => "Website title",
+    "title" => "RC Models",
     "welcome" => "Welcome to our website!",
 );
