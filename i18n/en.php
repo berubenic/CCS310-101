@@ -8,4 +8,3 @@ $lang = array(
     "title" => "Website title",
     "welcome" => "Welcome to our website!",
 );
-?>

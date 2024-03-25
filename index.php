@@ -2,16 +2,19 @@
 session_start();
 
 //This will get the ?lang=en or fr at the end of the url
-if (isset($_GET['lang'])) {
+if (isset ($_GET['lang'])) {
     $lang = $_GET['lang'];
 } else {
     $lang = 'en'; // default language
 }
 
-include('i18n/' . $lang . '.php');
+include ('i18n/' . $lang . '.php');
 
 // Get the requested URL
 $url = $_SERVER['REQUEST_URI'];
+
+// remove ?lang=en or fr from the url
+$url = strtok($url, '?');
 
 // If the URL is empty, assume it's index.html
 if ($url == '/') {
@@ -39,10 +42,9 @@ preg_match_all('/\{\{(.*?)\}\}/', $html, $matches);
 
 // Replace each placeholder with the translated text
 foreach ($matches[1] as $key) {
-    if (isset($lang[$key])) {
+    if (isset ($lang[$key])) {
         $html = str_replace('{{' . $key . '}}', $lang[$key], $html);
     }
 }
 
 echo $html;
-?>

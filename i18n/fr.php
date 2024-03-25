@@ -6,6 +6,5 @@ $lang = array(
     "selector.english" => "English",
     "page-not-found" => "Désolé la page n'as pas pus être trouvé !",
     "title" => "Titre du site",
-    "welcome" => "Bienvenu sur notre site !",
+    "welcome" => "Bienvenue sur notre site !",
 );
-?>
