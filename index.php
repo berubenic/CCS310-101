@@ -37,18 +37,18 @@ if (!file_exists($html_file)) {
 // Load the HTML file
 $html = file_get_contents($html_file);
 
-// Find all placeholders in the HTML
+// Replace header placeholder with translated header content
+$html = str_replace('{{header.html}}', file_get_contents('content/header.html'), $html);
+
+// Replace footer placeholder with translated footer content
+$html = str_replace('{{footer.html}}', file_get_contents('content/footer.html'), $html);
+
+// Find all remaining placeholders in the HTML
 preg_match_all('/\{\{(.*?)\}\}/', $html, $matches);
 
-// Replace each placeholder with the translated text
+// Replace other placeholders with the translated text
 foreach ($matches[1] as $key) {
-    if ($key == 'header.html') {
-        $html = str_replace('{{' . $key . '}}', file_get_contents('content/header.html'), $html);
-    }
-    else if ($key == 'footer.html') {
-        $html = str_replace('{{' . $key . '}}', file_get_contents('content/footer.html'), $html);
-    }
-    else if (isset ($lang[$key])) {
+    if (isset($lang[$key])) {
         $html = str_replace('{{' . $key . '}}', $lang[$key], $html);
     }
 }
