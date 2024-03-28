@@ -42,7 +42,13 @@ preg_match_all('/\{\{(.*?)\}\}/', $html, $matches);
 
 // Replace each placeholder with the translated text
 foreach ($matches[1] as $key) {
-    if (isset ($lang[$key])) {
+    if ($key == 'header.html') {
+        $html = str_replace('{{' . $key . '}}', file_get_contents('content/header.html'), $html);
+    }
+    else if ($key == 'footer.html') {
+        $html = str_replace('{{' . $key . '}}', file_get_contents('content/footer.html'), $html);
+    }
+    else if (isset ($lang[$key])) {
         $html = str_replace('{{' . $key . '}}', $lang[$key], $html);
     }
 }
