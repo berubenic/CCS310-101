@@ -43,6 +43,15 @@ $html = str_replace('{{header.html}}', file_get_contents('content/header.html'),
 // Replace footer placeholder with translated footer content
 $html = str_replace('{{footer.html}}', file_get_contents('content/footer.html'), $html);
 
+// Replace favicon placeholder with favicon content
+$html = str_replace('{{favicon.html}}', file_get_contents('content/favicon.html'), $html);
+
+// Replace stylesheet placeholder with stylesheet content
+$html = str_replace('{{styles.html}}', file_get_contents('content/styles.html'), $html);
+
+// Replace script placeholder with script content
+$html = str_replace('{{scripts.html}}', file_get_contents('content/scripts.html'), $html);
+
 // Find all remaining placeholders in the HTML
 preg_match_all('/\{\{(.*?)\}\}/', $html, $matches);
 

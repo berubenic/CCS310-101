@@ -1,5 +1,66 @@
-<header>
-    <div class="language-switcher">
-        <a href="?lang=en">{{selector.english}}</a> | <a href="?lang=fr">{{selector.french}}</a>
+<header class="mb-5">
+  <div class="container-lg">
+    <div class="container-lg d-flex gap-3 justify-content-end mt-2">
+      <div class="lang-wrapper">
+        <a href="?lang=en">{{selector.english}}</a>
+      </div>
+      <div class="lang-wrapper">
+        <a href="?lang=fr">{{selector.french}}</a>
+      </div>
     </div>
+
+    <nav
+      class="navbar navbar-expand-lg bg-danger bg-gradient"
+      data-bs-theme="dark"
+    >
+      <div class="container-fluid space-between">
+        <div class="navbar-brand">
+          <img
+            src="../assets/Sedan.png"
+            alt="Sedan icon"
+            width="36"
+            height="36"
+            class="ms-2 me-3"
+          />
+          RC Hub
+        </div>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./guides.html">Guides</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./reviews.html">Reviews</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./inspirations.html">Inspiration</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./connect.html">Connect</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
 </header>
