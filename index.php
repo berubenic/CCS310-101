@@ -57,7 +57,24 @@ preg_match_all('/\{\{(.*?)\}\}/', $html, $matches);
 
 // Replace other placeholders with the translated text
 foreach ($matches[1] as $key) {
-    if (isset($lang[$key])) {
+    if ($key == 'title') {
+        $title_to_replace = $lang['title'];
+        $url_without_slash = ltrim($url, '/');
+        $capitalized_url = ucfirst($url_without_slash);
+        if ($capitalized_url == '') {
+            $capitalized_url = $lang["lang.code"] == 'en' ? 'Home' : 'Accueil';
+        } elseif ($capitalized_url == 'Reviews') {
+            $capitalized_url = $lang["lang.code"] == 'en' ? 'Reviews' : 'Avis';
+        } elseif ($capitalized_url == 'Guides') {
+            $capitalized_url = $lang["lang.code"] == 'en' ? 'Guides' : 'Guides';
+        } elseif ($capitalized_url == 'Inspiration') {
+            $capitalized_url = $lang["lang.code"] == 'en' ? 'Inspiration' : 'Inspiration';
+        } elseif ($capitalized_url == 'Connect') {
+            $capitalized_url = $lang["lang.code"] == 'en' ? 'Connect' : 'Connecter';
+        }
+        $title_to_replace .= " - $capitalized_url";
+        $html = str_replace('{{title}}', $title_to_replace, $html);
+    } elseif (isset($lang[$key])) {
         $html = str_replace('{{' . $key . '}}', $lang[$key], $html);
     }
 }
