@@ -7,4 +7,9 @@ $lang = array(
     "page-not-found" => "Désolé la page n'as pas pus être trouvé !",
     "title" => "Modèles RC",
     "welcome" => "Bienvenue sur notre site !",
+    "home" => "Accueil",
+    "guide" => "Guide",
+    "reviews" => "Avis",
+    "inspiration" => "Inspiration",
+    "connect" => "Connecter",
 );
