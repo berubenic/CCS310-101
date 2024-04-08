@@ -11,7 +11,65 @@
   <body>
     {{header.html}}
     <main class="container">
-      <h1>Connect</h1>
+      <div class="container my-5">
+        <h1 class="text-center mb-4">Connect with RC Models</h1>
+        <p class="lead text-center mb-5">
+          Get in touch with us for all your RC modeling needs. Our team of
+          experts is here to assist you.
+        </p>
+
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" required />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required />
+              </div>
+              <div class="mb-3">
+                <label for="subject" class="form-label">Subject</label>
+                <input type="text" class="form-control" id="subject" required />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <div class="mb-3">
+                <label for="newsletter" class="form-label"
+                  >Subscribe to our newsletter?</label
+                >
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="newsletter"
+                  />
+                  <label class="form-check-label" for="newsletter">
+                    Yes, I want to receive updates and promotions from RC
+                    Models.
+                  </label>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+
+        <hr class="my-5" />
+
+        <p class="lead text-center">
+          Stay connected with us on social media for the latest updates, news,
+          and exclusive offers.
+        </p>
+      </div>
     </main>
     {{footer.html}}
   </body>

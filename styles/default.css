@@ -1,3 +1,9 @@
+body {
+  max-width: 1400px;
+  margin: 0 auto !important;
+  background-color: #f1f0f0 !important;
+}
+
 /* Banner */
 .home-banner-with-bg {
   display: flex;
@@ -112,6 +118,11 @@
         }
       }
     }
+  }
+
+  .carousel-control-next,
+  .carousel-control-prev {
+    top: 80px;
   }
 }
 
