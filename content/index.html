@@ -13,8 +13,8 @@
     <main class="container-fluid-lg">
       <div class="home-banner-with-bg">
         <div class="banner-content">
-          <h1>Welcome to RC Hub:</h1>
-          <h2>Your Ultimate Resource for Remote-Controlled Models</h2>
+          <h1>{{index.welcome_title}}</h1>
+          <h2>{{index.resource_description}}</h2>
         </div>
       </div>
       <div class="home-cards">
@@ -22,76 +22,36 @@
           <div class="col">
             <div class="card">
               <div class="card-body">
-                <h5 class="card-title">Comprehensive Guides and Tutorials</h5>
-                <img
-                  src="../assets/guides 1.svg"
-                  class="card-img-mid"
-                  alt="Guide icon"
-                />
-                <p class="card-text">
-                  Dive into our extensive library of step-by-step guides and
-                  tutorials covering every aspect of RC modeling. Whether you're
-                  looking to build your first model or fine-tune your flying
-                  skills, our expertly crafted tutorials will guide you every
-                  step of the way.
-                </p>
+                <h5 class="card-title">{{index.guide_title_1}}</h5>
+                <img src="../assets/guides 1.svg" class="card-img-mid" alt="{{index.guide_icon_alt_1}}" />
+                <p class="card-text">{{index.guide_description_1}}</p>
               </div>
             </div>
           </div>
           <div class="col">
             <div class="card">
               <div class="card-body">
-                <h5 class="card-title">Comprehensive Guides and Tutorials</h5>
-                <img
-                  src="../assets/guides 1.svg"
-                  class="card-img-mid"
-                  alt="Guide icon"
-                />
-                <p class="card-text">
-                  Dive into our extensive library of step-by-step guides and
-                  tutorials covering every aspect of RC modeling. Whether you're
-                  looking to build your first model or fine-tune your flying
-                  skills, our expertly crafted tutorials will guide you every
-                  step of the way.
-                </p>
+                <h5 class="card-title">{{index.guide_title_2}}</h5>
+                <img src="../assets/guides 1.svg" class="card-img-mid" alt="{{index.guide_icon_alt_2}}" />
+                <p class="card-text">{{index.guide_description_2}}</p>
               </div>
             </div>
           </div>
           <div class="col">
             <div class="card">
               <div class="card-body">
-                <h5 class="card-title">Comprehensive Guides and Tutorials</h5>
-                <img
-                  src="../assets/guides 1.svg"
-                  class="card-img-mid"
-                  alt="Guide icon"
-                />
-                <p class="card-text">
-                  Dive into our extensive library of step-by-step guides and
-                  tutorials covering every aspect of RC modeling. Whether you're
-                  looking to build your first model or fine-tune your flying
-                  skills, our expertly crafted tutorials will guide you every
-                  step of the way.
-                </p>
+                <h5 class="card-title">{{index.guide_title_3}}</h5>
+                <img src="../assets/guides 1.svg" class="card-img-mid" alt="{{index.guide_icon_alt_3}}" />
+                <p class="card-text">{{index.guide_description_3}}</p>
               </div>
             </div>
           </div>
           <div class="col">
             <div class="card">
               <div class="card-body">
-                <h5 class="card-title">Comprehensive Guides and Tutorials</h5>
-                <img
-                  src="../assets/guides 1.svg"
-                  class="card-img-mid"
-                  alt="Guide icon"
-                />
-                <p class="card-text">
-                  Dive into our extensive library of step-by-step guides and
-                  tutorials covering every aspect of RC modeling. Whether you're
-                  looking to build your first model or fine-tune your flying
-                  skills, our expertly crafted tutorials will guide you every
-                  step of the way.
-                </p>
+                <h5 class="card-title">{{index.guide_title_4}}</h5>
+                <img src="../assets/guides 1.svg" class="card-img-mid" alt="{{index.guide_icon_alt_4}}" />
+                <p class="card-text">{{index.guide_description_4}}</p>
               </div>
             </div>
           </div>
@@ -100,68 +60,29 @@
       <div class="home-carousel">
         <div id="homeCarousel" class="carousel slide">
           <div class="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#homeCarousel"
-              data-bs-slide-to="0"
-              class="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#homeCarousel"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#homeCarousel"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
+            <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="{{index.slide_1_label}}"></button>
+            <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="1" aria-label="{{index.slide_2_label}}"></button>
+            <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="2" aria-label="{{index.slide_3_label}}"></button>
           </div>
 
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img
-                src="../assets/carousel-1.png"
-                class="d-block w-100"
-                alt="A truck RC Model"
-              />
+              <img src="../assets/carousel-1.png" class="d-block w-100" alt="{{index.carousel_1_alt}}" />
             </div>
             <div class="carousel-item">
-              <img
-                src="../assets/carousel-2.png"
-                class="d-block w-100"
-                alt="A car RC model"
-              />
+              <img src="../assets/carousel-2.png" class="d-block w-100" alt="{{index.carousel_2_alt}}" />
             </div>
             <div class="carousel-item">
-              <img
-                src="../assets/carousel-3.png"
-                class="d-block w-100"
-                alt="A plane RC model"
-              />
+              <img src="../assets/carousel-3.png" class="d-block w-100" alt="{{index.carousel_3_alt}}" />
             </div>
           </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#homeCarousel"
-            data-bs-slide="prev"
-          >
+          <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
+            <span class="visually-hidden">{{index.previous_label}}</span>
           </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#homeCarousel"
-            data-bs-slide="next"
-          >
+          <button class="carousel-control-next" type="button" data-bs-target="#homeCarousel" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
+            <span class="visually-hidden">{{index.next_label}}</span>
           </button>
         </div>
       </div>
@@ -169,67 +90,28 @@
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <div class="col">
             <div class="card testimonial">
-              <img
-                src="../assets/test-1.png"
-                class="card-img-mid"
-                alt="Guide icon"
-              />
+              <img src="../assets/test-1.png" class="card-img-mid" alt="{{testimonial_1_image_alt}}" />
               <div class="card-body">
-                <h5 class="card-title testimonial-author">
-                  Jane Doe, RC Enthusiast
-                </h5>
-
-                <p class="card-text testimonial-text">
-                  "RC Hub has been an invaluable resource for me as I've
-                  ventured into the world of RC modeling. The guides are
-                  comprehensive and easy to follow, and the community is always
-                  there to help out when I get stuck. I can't recommend it
-                  enough!"
-                </p>
+                <h5 class="card-title testimonial-author">{{index.testimonial_1_author}}</h5>
+                <p class="card-text testimonial-text">"{{index.testimonial_1_text}}"</p>
               </div>
             </div>
           </div>
           <div class="col">
             <div class="card testimonial">
-              <img
-                src="../assets/test-3.png"
-                class="card-img-mid"
-                alt="Guide icon"
-              />
+              <img src="../assets/test-3.png" class="card-img-mid" alt="{{index.testimonial_2_image_alt}}" />
               <div class="card-body">
-                <h5 class="card-title testimonial-author">
-                  John Smith, RC Enthusiast
-                </h5>
-
-                <p class="card-text testimonial-text">
-                  "I've been flying RC planes for years, but I still find
-                  something new every time I visit RC Hub. The tutorials are
-                  clear and concise, and the tips and tricks section has helped
-                  me improve my skills beyond what I thought was possible. It's
-                  a must-visit for any RC enthusiast!"
-                </p>
+                <h5 class="card-title testimonial-author">{{index.testimonial_2_author}}</h5>
+                <p class="card-text testimonial-text">"{{index.testimonial_2_text}}"</p>
               </div>
             </div>
           </div>
           <div class="col">
             <div class="card testimonial">
-              <img
-                src="../assets/test-2.png"
-                class="card-img-mid"
-                alt="Guide icon"
-              />
+              <img src="../assets/test-2.png" class="card-img-mid" alt="{{index.testimonial_3_image_alt}}" />
               <div class="card-body">
-                <h5 class="card-title testimonial-author">
-                  Sarah Johnson, RC Enthusiast
-                </h5>
-
-                <p class="card-text testimonial-text">
-                  "I stumbled upon RC Hub while looking for tips on how to build
-                  my first RC car, and I'm so glad I did. The step-by-step
-                  guides made the process a breeze, and I was able to get my car
-                  up and running in no time. I've since built several more
-                  models, and I owe it all to RC Hub!"
-                </p>
+                <h5 class="card-title testimonial-author">{{index.testimonial_3_author}}</h5>
+                <p class="card-text testimonial-text">"{{index.testimonial_3_text}}"</p>
               </div>
             </div>
           </div>

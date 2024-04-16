@@ -12,63 +12,43 @@
     {{header.html}}
     <main class="container">
       <div class="container my-5">
-        <h1 class="text-center mb-4">Connect with RC Models</h1>
-        <p class="lead text-center mb-5">
-          Get in touch with us for all your RC modeling needs. Our team of
-          experts is here to assist you.
-        </p>
+        <h1 class="text-center mb-4">{{connect.connect_with_rc_models}}</h1>
+        <p class="lead text-center mb-5">{{connect.get_in_touch_text}}</p>
 
         <div class="row justify-content-center">
           <div class="col-md-8">
             <form>
               <div class="mb-3">
-                <label for="name" class="form-label">Name</label>
-                <input type="text" class="form-control" id="name" required />
+                <label for="name" class="form-label">{{connect.name_label}}</label>
+                <input type="text" class="form-control" id="name" required/>
               </div>
               <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" required />
+                <label for="email" class="form-label">{{connect.email_label}}</label>
+                <input type="email" class="form-control" id="email" required/>
               </div>
               <div class="mb-3">
-                <label for="subject" class="form-label">Subject</label>
-                <input type="text" class="form-control" id="subject" required />
+                <label for="subject" class="form-label">{{connect.subject_label}}</label>
+                <input type="text" class="form-control" id="subject" required/>
               </div>
               <div class="mb-3">
-                <label for="message" class="form-label">Message</label>
-                <textarea
-                  class="form-control"
-                  id="message"
-                  rows="5"
-                  required
-                ></textarea>
+                <label for="message" class="form-label">{{connect.message_label}}</label>
+                <textarea class="form-control" id="message" rows="5" required></textarea>
               </div>
               <div class="mb-3">
-                <label for="newsletter" class="form-label"
-                  >Subscribe to our newsletter?</label
-                >
+                <label for="newsletter" class="form-label">{{connect.subscribe_to_newsletter_label}}</label>
                 <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="newsletter"
-                  />
-                  <label class="form-check-label" for="newsletter">
-                    Yes, I want to receive updates and promotions from RC
-                    Models.
-                  </label>
+                  <input class="form-check-input" type="checkbox" id="newsletter"/>
+                  <label class="form-check-label" for="newsletter">{{connect.newsletter_agreement_text}}</label>
                 </div>
               </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
+              <button type="submit" class="btn btn-primary">{{connect.submit_button}}</button>
             </form>
           </div>
         </div>
 
         <hr class="my-5" />
 
-        <p class="lead text-center">
-          Stay connected with us on social media for the latest updates, news,
-          and exclusive offers.
-        </p>
+        <p class="lead text-center">{{connect.stay_connected_text}}</p>
       </div>
     </main>
     {{footer.html}}

@@ -12,25 +12,17 @@
     {{header.html}}
     <main class="container">
       <div class="container my-5">
-        <h1 class="text-center mb-4">RC Models Reviews</h1>
-        <p class="lead text-center mb-5">
-          Read what our customers have to say about their experiences with RC
-          Models.
-        </p>
+        <h1 class="text-center mb-4">{{reviews.rc_models_reviews}}</h1>
+        <p class="lead text-center mb-5">{{reviews.read_what_customers_say}}</p>
 
         <div class="row row-cols-1 row-cols-md-2 g-4">
           <div class="col">
             <div class="card">
               <div class="card-body">
-                <h5 class="card-title">Incredible Performance</h5>
+                <h5 class="card-title">{{reviews.incredible_performance}}</h5>
+                <p class="card-text">"{{reviews.incredible_performance_review}}"</p>
                 <p class="card-text">
-                  "I recently purchased the RC Speedster from RC Models, and I'm
-                  blown away by its performance. The acceleration and top speed
-                  are incredible, and the handling is precise and responsive.
-                  It's a true thrill to drive!"
-                </p>
-                <p class="card-text">
-                  <small class="text-muted">- John D.</small>
+                  <small class="text-muted">{{reviews.reviewer_john_d}}</small>
                 </p>
               </div>
             </div>
@@ -38,15 +30,10 @@
           <div class="col">
             <div class="card">
               <div class="card-body">
-                <h5 class="card-title">Excellent Customer Service</h5>
+                <h5 class="card-title">{{reviews.excellent_customer_service}}</h5>
+                <p class="card-text">"{{reviews.excellent_customer_service_review}}"</p>
                 <p class="card-text">
-                  "I had a minor issue with my RC model, and the customer
-                  service team at RC Models was outstanding. They responded
-                  quickly and resolved the problem efficiently. Their commitment
-                  to customer satisfaction is truly impressive."
-                </p>
-                <p class="card-text">
-                  <small class="text-muted">- Sarah L.</small>
+                  <small class="text-muted">{{reviews.reviewer_sarah_l}}</small>
                 </p>
               </div>
             </div>
@@ -54,16 +41,10 @@
           <div class="col">
             <div class="card">
               <div class="card-body">
-                <h5 class="card-title">Highly Recommended</h5>
+                <h5 class="card-title">{{reviews.highly_recommended}}</h5>
+                <p class="card-text">"{{reviews.highly_recommended_review}}"</p>
                 <p class="card-text">
-                  "As an experienced RC enthusiast, I can confidently say that
-                  RC Models offers some of the best products and services in the
-                  industry. Their models are well-designed, durable, and a joy
-                  to operate. I highly recommend them to anyone looking for a
-                  top-notch RC experience."
-                </p>
-                <p class="card-text">
-                  <small class="text-muted">- Mike T.</small>
+                  <small class="text-muted">{{reviews.reviewer_mike_t}}</small>
                 </p>
               </div>
             </div>
@@ -71,7 +52,7 @@
         </div>
 
         <div class="text-center mt-5">
-          <a href="#" class="btn btn-primary">Leave a Review</a>
+          <a href="#" class="btn btn-primary">{{reviews.leave_a_review}}</a>
         </div>
       </div>
     </main>
