@@ -24,6 +24,10 @@ $lang = array(
     "connect.submit_button" => "Submit",
     "connect.stay_connected_text" => "Stay connected with us on social media for the latest updates, news, and exclusive offers.",
     "connect.successMessage" => "Success",
+    "connect.name_validation_error" => "Name should be at least 2 characters long",
+    "connect.email_validation_error" => "Email should be a valid email",
+    "connect.subject_validation_error" => "Subject should be at least 2 characters long",
+    "connect.message_validation_error" => "Message should be at least 10 characters long",
 
     "guides.rc_models_guides" => "RC Models Guides",
     "guides.explore_guides_text" => "Explore our comprehensive guides to help you get the most out of your RC modeling experience.",
