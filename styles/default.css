@@ -176,8 +176,13 @@ body {
   }
 }
 
+.col-md-8 {
+  position: relative;
+  padding: 16px;
+}
+
 #loadingBlocker, #successBlocker {
-  position: fixed;
+  position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
@@ -185,8 +190,21 @@ body {
   z-index: 200;
   background: #000000ad;
 
+  .success {
+    position: absolute;
+    top: calc(50% - 30px);
+    left: calc(50% - 50px);
+    background: white;
+    border-radius: 16px;
+    height: 60px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .loading {
-    position: fixed;
+    position: absolute;
     top: calc(50% - 50px - 16px - 8px);
     left: calc(50% - 50px - 16px - 8px);
     border: 16px solid #f3f3f3;
@@ -200,4 +218,9 @@ body {
   .spinner {
     animation: spin 2s linear infinite;
   }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
