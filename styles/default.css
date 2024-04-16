@@ -4,6 +4,10 @@ body {
   background-color: #f1f0f0 !important;
 }
 
+.navbar-brand a {
+  color: white;
+}
+
 /* Banner */
 .home-banner-with-bg {
   display: flex;
