@@ -21,18 +21,22 @@
               <div class="mb-3">
                 <label for="name" class="form-label">{{connect.name_label}}</label>
                 <input type="text" class="form-control" id="name" required/>
+                <div id="nameError" class="error" style="display: none;"></div>
               </div>
               <div class="mb-3">
                 <label for="email" class="form-label">{{connect.email_label}}</label>
                 <input type="email" class="form-control" id="email" required/>
+                <div id="emailError" class="error" style="display: none;"></div>
               </div>
               <div class="mb-3">
                 <label for="subject" class="form-label">{{connect.subject_label}}</label>
                 <input type="text" class="form-control" id="subject" required/>
+                <div id="subjectError" class="error" style="display: none;"></div>
               </div>
               <div class="mb-3">
                 <label for="message" class="form-label">{{connect.message_label}}</label>
                 <textarea class="form-control" id="message" rows="5" required></textarea>
+                <div id="messageError" class="error" style="display: none;"></div>
               </div>
               <div class="mb-3">
                 <label for="newsletter" class="form-label">{{connect.subscribe_to_newsletter_label}}</label>
@@ -43,6 +47,8 @@
               </div>
               <button type="submit" class="btn btn-primary">{{connect.submit_button}}</button>
             </form>
+            <div id="loadingBlocker" style="display: none;"><div class="loading spinner"></div></div>
+            <div id="successBlocker" style="display: none;"><div class="success">{{connect.successMessage}}</div></div>
           </div>
         </div>
 

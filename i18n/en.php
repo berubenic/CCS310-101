@@ -23,6 +23,7 @@ $lang = array(
     "connect.newsletter_agreement_text" => "Yes, I want to receive updates and promotions from RC Models.",
     "connect.submit_button" => "Submit",
     "connect.stay_connected_text" => "Stay connected with us on social media for the latest updates, news, and exclusive offers.",
+    "connect.successMessage" => "Success",
 
     "guides.rc_models_guides" => "RC Models Guides",
     "guides.explore_guides_text" => "Explore our comprehensive guides to help you get the most out of your RC modeling experience.",

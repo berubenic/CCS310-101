@@ -175,3 +175,29 @@ body {
     }
   }
 }
+
+#loadingBlocker, #successBlocker {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  background: #000000ad;
+
+  .loading {
+    position: fixed;
+    top: calc(50% - 50px - 16px - 8px);
+    left: calc(50% - 50px - 16px - 8px);
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #3498db;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: 8px;
+  }
+
+  .spinner {
+    animation: spin 2s linear infinite;
+  }
+}
