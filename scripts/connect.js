@@ -21,6 +21,9 @@ window.addEventListener('load', function() {
                     var successDiv = document.querySelector('#successBlocker');
                     successDiv.style.display = 'block';
 
+                    // Clear all the input fields in the form
+                    form.reset();
+
                     // Hide the success message after 5 seconds
                     setTimeout(function () {
                         successDiv.style.display = 'none';
